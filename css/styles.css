@@ -1,0 +1,535 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+button {
+  cursor: pointer;
+  font-size: inherit;
+  border: none;
+  background: transparent;
+}
+
+a:focus {
+  outline: 0 !important;
+  border: 0 !important;
+}
+
+:root {
+  --steel-blue: rgb(50, 106, 144);
+  --grey: rgb(204, 204, 204);
+  --icy: rgb(182, 210, 224);
+  --frosted: rgb(172, 205, 221);
+  --pearl: rgb(245, 241, 241);
+  --black: rgb(42, 41, 42);
+  --transparent-white: rgba(255, 255, 255, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent; /* Removes the blue highlight on mobile when you click the button or image */
+}
+
+li,
+a {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+.link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.button {
+  padding: 10px 12px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  transition: 0.2s background-color;
+}
+
+.button:focus,
+.button:active {
+  border: 2px solid #000 !important;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  line-height: 100%;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  line-height: 120%;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 0.26px;
+  line-height: 100%;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.14px;
+  line-height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.wrapper {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.white-button {
+  color: #fff;
+  border-color: #fff;
+}
+
+.white-button:hover {
+  color: var(--steel-blue);
+  background-color: #fff;
+}
+
+.white-button:focus, .white-button:active {
+  border-color: #fff !important;
+}
+
+.steel-blue {
+  background-color: var(--steel-blue);
+}
+
+.dark {
+  background-color: var(--black);
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--icy);
+  z-index: 999;
+}
+
+.header__wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 28px;
+}
+
+.header__wrap .button {
+  padding: 8px 10px;
+}
+
+.header__wrap .button:hover {
+  color: var(--icy);
+}
+
+.header__title {
+  font-size: 24px;
+}
+
+.header__nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header__list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__call-button {
+  text-align: right;
+}
+
+.intro__wrap {
+  position: relative;
+  background-image: url("../img/office.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro__title {
+  margin-top: 55px;
+}
+
+.intro__text {
+  width: 50%;
+}
+
+.credit__wrap {
+  padding: 40px 0;
+}
+
+.credit__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.credit__item {
+  color: var(--pearl);
+}
+
+.credit__title {
+  margin-bottom: 8px;
+}
+
+#assistance {
+  padding: 60px 0;
+  background-color: var(--pearl);
+}
+
+.assistance__list {
+  display: flex;
+  gap: 40px;
+}
+
+.assistance__title {
+  margin-bottom: 40px;
+}
+
+.assistance__name {
+  margin-bottom: 20px;
+}
+
+.assistance__item {
+  position: relative;
+  margin-bottom: 40px;
+  flex: 1;
+}
+
+.assistance__image {
+  max-width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.assistance__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 26px;
+}
+
+.triangle-down {
+  box-sizing: content-box;
+  width: 50%;
+  height: 0;
+  padding-left: 50%;
+  padding-top: 5%;
+  overflow: hidden;
+}
+.triangle-down div {
+  width: 0;
+  height: 0;
+  margin-left: -1000px;
+  margin-top: -100px;
+  border-left: 1000px solid transparent;
+  border-right: 1000px solid transparent;
+  border-top: 100px solid var(--pearl);
+}
+
+#about {
+  padding: 80px 0 60px 0;
+}
+
+.about__wrap {
+  display: flex;
+  gap: 40px;
+}
+
+.about__image {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about__button {
+  display: inline;
+}
+
+#contact {
+  padding-bottom: 80px;
+}
+
+.contact__wrap {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact__content {
+  flex: 1;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+}
+
+.contact__fields {
+  display: flex;
+  gap: 20px;
+}
+
+.contact__title {
+  margin-bottom: 20px;
+}
+
+.contact__fields,
+.contact__message,
+.contact__name,
+.contact__email {
+  width: 100%;
+}
+
+.contact__caption {
+  margin-bottom: 8px;
+}
+
+.contact__input,
+.contact__input-large {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 0;
+  background-color: var(--pearl);
+}
+
+.contact__input-large {
+  resize: vertical;
+  max-height: 300px;
+}
+
+.contact__submit {
+  font-family: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+}
+
+#footer {
+  padding: 40px 28px;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+}
+
+.footer__title {
+  font-size: 24px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#confirmation {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  background-color: var(--pearl);
+}
+
+.confirmation__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.confirmation__button, .contact__submit, .about__button {
+  align-self: flex-start;
+}
