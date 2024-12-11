@@ -1,0 +1,22 @@
+#footer {
+  padding: 40px 28px;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+}
+
+.footer__title {
+  font-size: 24px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

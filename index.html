@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vista Bella</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,7 +27,7 @@
                     <li class="header__item link"><a href="#contact">Contáctanos</a></li>
                 </ul>
             </nav>
-            <a class="header__call-button button" href="tel:+525587654321">
+            <a class="header__call-btn btn" href="tel:+525587654321">
                 Llamar Ahora
             </a>
         </div>
@@ -39,7 +40,7 @@
                     <p class="intro__text">Ofrecemos atención integral y especializada para tu salud visual, asegurando
                         el bienestar ocular con tecnología de
                         vanguardia.</p>
-                    <a href="#contact" class="intro__button button">Contáctanos</a>
+                    <a href="#contact" class="intro__btn btn">Contáctanos</a>
                 </div>
             </div>
         </section>
@@ -117,11 +118,148 @@
                             atención personalizada que se adapta a las necesidades únicas de cada paciente, asegurando
                             así una experiencia cómoda y
                             efectiva.</p>
+                        <a href="#contact" class="about__btn btn white-btn">Contáctanos</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact" class="white-text steel-blue">
+        <section id="pricing" class="white-text steel-blue">
+            <div class="wrapper">
+                <div class="pricing__wrap">
+                    <h2 class="pricing__title">Servicios de Clínica Oftalmológica</h2>
+                    <ul class="pricing__list">
+                        <li class="pricing__item">
+                            <img src="./img/equipment.jpeg" alt="" class="pricing__image">
+                            <h3 class="pricing__caption">Consulta Básica de Oftalmología</h3>
+                            <div class="pricing__price">
+                                <div class="pricing__price-value">$1,000</div>
+                                <span class="pricing__price-subcaption">por consulta</span>
+                            </div>
+                            <button class="pricing__btn btn white-btn">Más información</button>
+                            <div class="pricing__description">Evaluación general de la salud visual y detección de
+                                problemas comunes.</div>
+                            <ul class="pricing__inclusion-list">
+                                <li class="pricing__inclusion-item">
+                                    <div class="pricing__inclusion-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" width="24" height="24" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="m5 13 4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="pricing__inclusion-text">Examen visual</p>
+                                </li>
+                                <li class="pricing__inclusion-item">
+                                    <div class="pricing__inclusion-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" width="24" height="24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="m5 13 4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="pricing__inclusion-text">Detección cataratas</p>
+                                </li>
+                                <li class="pricing__inclusion-item">
+                                    <div class="pricing__inclusion-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" width="24" height="24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="m5 13 4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="pricing__inclusion-text">Consejos cuidado</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pricing__item">
+                            <img src="./img/equipment.jpeg" alt="" class="pricing__image">
+                            <span class="pricing__span-popular">Popular</span>
+                            <h3 class="pricing__caption">Consulta Básica de Oftalmología</h3>
+                            <div class="pricing__price">
+                                <div class="pricing__price-value">$1,000</div>
+                                <span class="pricing__price-subcaption">por consulta</span>
+                            </div>
+                            <button class="pricing__btn btn white-btn">Más información</button>
+                            <div class="pricing__description">Evaluación general de la salud visual y detección de
+                                problemas comunes.</div>
+                            <ul class="pricing__inclusion-list">
+                                <li class="pricing__inclusion-item">
+                                    <div class="pricing__inclusion-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24"
+                                            height="24" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 13 4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="pricing__inclusion-text">Examen visual</p>
+                                </li>
+                                <li class="pricing__inclusion-item">
+                                    <div class="pricing__inclusion-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24"
+                                            height="24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 13 4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="pricing__inclusion-text">Detección cataratas</p>
+                                </li>
+                                <li class="pricing__inclusion-item">
+                                    <div class="pricing__inclusion-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24"
+                                            height="24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 13 4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="pricing__inclusion-text">Consejos cuidado</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pricing__item">
+                            <img src="./img/equipment.jpeg" alt="" class="pricing__image">
+                            <h3 class="pricing__caption">Consulta Básica de Oftalmología</h3>
+                            <div class="pricing__price">
+                                <div class="pricing__price-value">$1,000</div>
+                                <span class="pricing__price-subcaption">por consulta</span>
+                            </div>
+                            <button class="pricing__btn btn white-btn">Más información</button>
+                            <div class="pricing__description">Evaluación general de la salud visual y detección de
+                                problemas comunes.</div>
+                            <ul class="pricing__inclusion-list">
+                                <li class="pricing__inclusion-item">
+                                    <div class="pricing__inclusion-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24"
+                                            height="24" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 13 4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="pricing__inclusion-text">Examen visual</p>
+                                </li>
+                                <li class="pricing__inclusion-item">
+                                    <div class="pricing__inclusion-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24"
+                                            height="24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 13 4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="pricing__inclusion-text">Detección cataratas</p>
+                                </li>
+                                <li class="pricing__inclusion-item">
+                                    <div class="pricing__inclusion-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24"
+                                            height="24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 13 4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="pricing__inclusion-text">Consejos cuidado</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="triangle-down blue-triangle">
+            <div></div>
+        </div>
+        <section id="contact">
             <div class="wrapper">
                 <div class="contact__wrap">
                     <div class="contact__content">
@@ -146,7 +284,7 @@
                             <h4 class="contact__caption">Mensaje</h4>
                             <textarea name="message" rows="5" class="contact__input-large" required></textarea>
                         </div>
-                        <button type="submit" class="contact__submit button white-button">Enviar Mensaje</button>
+                        <button type="submit" class="contact__submit btn">Enviar Mensaje</button>
                     </form>
                 </div>
             </div>
