@@ -3,10 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Clínica Oftalmológica Especializada">
+    <meta name="keywords"
+        content="clínica, oftalmológica, visión, tratamiento, cataratas, glaucoma, terapia, miopía, lentes, astigmatismo">
+    <meta name="author" content="Vista Bella">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vista Bella</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -74,7 +79,7 @@
                     <h2 class="assistance__title">Atención Visual Avanzada</h2>
                     <ul class="assistance__list">
                         <li class="assistance__item">
-                            <img src="./img/googles.jpeg" alt="" class="assistance__image">
+                            <img src="./img/googles.jpeg" alt="googles" class="assistance__image">
                             <div class="assistance__content">
                                 <h3 class="assistance__name">Exámenes Oculares Integrales</h3>
                                 <p class="assistance__text">Evaluación completa de su salud visual para detectar y
@@ -83,7 +88,7 @@
                             </div>
                         </li>
                         <li class="assistance__item">
-                            <img src="./img/office.jpeg" alt="" class="assistance__image">
+                            <img src="./img/office.jpeg" alt="oficina" class="assistance__image">
                             <div class="assistance__content">
                                 <h3 class="assistance__name">Cirugía de Cataratas Avanzada</h3>
                                 <p class="assistance__text">Procedimientos modernos para restaurar su visión con
@@ -91,7 +96,7 @@
                             </div>
                         </li>
                         <li class="assistance__item">
-                            <img src="./img/two-microscopes.jpeg" alt="" class="assistance__image">
+                            <img src="./img/two-microscopes.jpeg" alt="dos microscopios" class="assistance__image">
                             <div class="assistance__content">
                                 <h3 class="assistance__name">Tratamiento de Glaucoma Personalizado</h3>
                                 <p class="assistance__text">Enfoques innovadores para controlar el glaucoma y proteger
@@ -102,13 +107,10 @@
                 </div>
             </div>
         </section>
-        <div class="triangle-down steel-blue">
-            <div></div>
-        </div>
-        <section id="about" class="white-text steel-blue">
+        <section id="about">
             <div class="wrapper">
                 <div class="about__wrap">
-                    <img src="./img/kid-patient.jpg" alt="" class="about__image">
+                    <img src="./img/kid-patient.jpg" alt="paciente" class="about__image">
                     <div class="about__content">
                         <h2 class="about__title">Cuidando tu visión con excelencia</h2>
                         <p class="about__text">En Vista Bella, nos dedicamos a ofrecer servicios de oftalmología de
@@ -118,8 +120,44 @@
                             atención personalizada que se adapta a las necesidades únicas de cada paciente, asegurando
                             así una experiencia cómoda y
                             efectiva.</p>
-                        <a href="#contact" class="about__btn btn white-btn">Contáctanos</a>
+                        <a href="#contact" class="about__btn btn">Contáctanos</a>
                     </div>
+                </div>
+            </div>
+        </section>
+        <div class="triangle-down steel-blue">
+            <div></div>
+        </div>
+        <section id="gallery">
+            <div id="slider-gallery" class="slider">
+                <div id="slider__list-gallery" class="slider__list">
+                    <div class="slider__item">
+                        <img src="img/workplace.jpeg" alt="lugar de trabajo">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/microscope.jpeg" alt="microscopio">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/equipment-2.jpeg" alt="equipo médico">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/laser.jpg" alt="tratamiento ocular">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/workplace-2.jpeg" alt="lugar de trabajo">
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <button id="prev-btn-gallery" class="prev-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            stroke="#fff" viewBox="0 0 24 24" width="24" height="24" class="btn-ico">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m15 19-7-7 7-7">
+                            </path>
+                        </svg></button>
+                    <button id="next-btn-gallery" class="next-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            stroke="#fff" viewBox="0 0 24 24" width="24" height="24" class="btn-ico">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m9 5 7 7-7 7">
+                            </path>
+                        </svg></button>
                 </div>
             </div>
         </section>
@@ -129,7 +167,7 @@
                     <h2 class="pricing__title">Servicios de Clínica Oftalmológica</h2>
                     <ul class="pricing__list">
                         <li class="pricing__item">
-                            <img src="./img/equipment.jpeg" alt="" class="pricing__image">
+                            <img src="./img/equipment.jpeg" alt="medical equipment" class="pricing__image">
                             <h3 class="pricing__caption">Consulta Básica de Oftalmología</h3>
                             <div class="pricing__price">
                                 <div class="pricing__price-value">$1,000</div>
@@ -172,7 +210,7 @@
                             </ul>
                         </li>
                         <li class="pricing__item">
-                            <img src="./img/equipment.jpeg" alt="" class="pricing__image">
+                            <img src="./img/equipment.jpeg" alt="medical equipment" class="pricing__image">
                             <span class="pricing__span-popular">Popular</span>
                             <h3 class="pricing__caption">Consulta Básica de Oftalmología</h3>
                             <div class="pricing__price">
@@ -185,27 +223,30 @@
                             <ul class="pricing__inclusion-list">
                                 <li class="pricing__inclusion-item">
                                     <div class="pricing__inclusion-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24"
-                                            height="24" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 13 4 4L19 7"></path>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" width="24" height="24" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="m5 13 4 4L19 7"></path>
                                         </svg>
                                     </div>
                                     <p class="pricing__inclusion-text">Examen visual</p>
                                 </li>
                                 <li class="pricing__inclusion-item">
                                     <div class="pricing__inclusion-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24"
-                                            height="24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 13 4 4L19 7"></path>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" width="24" height="24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="m5 13 4 4L19 7"></path>
                                         </svg>
                                     </div>
                                     <p class="pricing__inclusion-text">Detección cataratas</p>
                                 </li>
                                 <li class="pricing__inclusion-item">
                                     <div class="pricing__inclusion-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24"
-                                            height="24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 13 4 4L19 7"></path>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" width="24" height="24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="m5 13 4 4L19 7"></path>
                                         </svg>
                                     </div>
                                     <p class="pricing__inclusion-text">Consejos cuidado</p>
@@ -213,7 +254,7 @@
                             </ul>
                         </li>
                         <li class="pricing__item">
-                            <img src="./img/equipment.jpeg" alt="" class="pricing__image">
+                            <img src="./img/equipment.jpeg" alt="medical equipment" class="pricing__image">
                             <h3 class="pricing__caption">Consulta Básica de Oftalmología</h3>
                             <div class="pricing__price">
                                 <div class="pricing__price-value">$1,000</div>
@@ -225,27 +266,30 @@
                             <ul class="pricing__inclusion-list">
                                 <li class="pricing__inclusion-item">
                                     <div class="pricing__inclusion-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24"
-                                            height="24" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 13 4 4L19 7"></path>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" width="24" height="24" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="m5 13 4 4L19 7"></path>
                                         </svg>
                                     </div>
                                     <p class="pricing__inclusion-text">Examen visual</p>
                                 </li>
                                 <li class="pricing__inclusion-item">
                                     <div class="pricing__inclusion-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24"
-                                            height="24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 13 4 4L19 7"></path>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" width="24" height="24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="m5 13 4 4L19 7"></path>
                                         </svg>
                                     </div>
                                     <p class="pricing__inclusion-text">Detección cataratas</p>
                                 </li>
                                 <li class="pricing__inclusion-item">
                                     <div class="pricing__inclusion-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24"
-                                            height="24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 13 4 4L19 7"></path>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" width="24" height="24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                                d="m5 13 4 4L19 7"></path>
                                         </svg>
                                     </div>
                                     <p class="pricing__inclusion-text">Consejos cuidado</p>
@@ -256,6 +300,53 @@
                 </div>
             </div>
         </section>
+        <div id="slider-feedback" class="slider white-text steel-blue">
+            <div id="slider__list-feedback" class="slider__list">
+                <div class="slider__item">
+                    <p class="slider__item-text">
+                        En Vista Bella, recibí un trato excelente y una atención personalizada que superó mis
+                        expectativas. El personal fue
+                        amable y muy profesional. Mi visión ha mejorado drásticamente gracias a su tratamiento.
+                        Recomiendo encarecidamente sus
+                        servicios oftalmológicos en México.
+                    </p>
+                    <cite class="slider__item-author">- Javier Torres</cite>
+                </div>
+                <div class="slider__item">
+                    <p class="slider__item-text">
+                        Estoy muy impresionado con Vista Bella. Desde la recepción hasta la consulta, todo el personal
+                        fue
+                        amable y profesional.
+                        Gracias a su atención experta, mi vista ha mejorado significativamente. Recomiendo este lugar a
+                        cualquiera que necesite
+                        cuidado oftalmológico.
+                    </p>
+                    <cite class="slider__item-author">- Carlos Mendoza</cite>
+                </div>
+                <div class="slider__item">
+                    <p class="slider__item-text">
+                        Recibí un servicio excepcional en Vista Bella. El equipo fue increíblemente profesional y
+                        atento,
+                        haciéndome sentir
+                        cómodo durante todo el proceso. Mis problemas de visión han mejorado notablemente. Sin duda, lo
+                        recomiendo a cualquiera
+                        que busque atención oftalmológica de alta calidad.
+                    </p>
+                    <cite class="slider__item-author">- María López</cite>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <button id="prev-btn-feedback" class="prev-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        stroke="#fff" viewBox="0 0 24 24" width="24" height="24" class="btn-ico">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m15 19-7-7 7-7">
+                        </path>
+                    </svg></button>
+                <button id="next-btn-feedback" class="next-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        stroke="#fff" viewBox="0 0 24 24" width="24" height="24" class="btn-ico">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m9 5 7 7-7 7"></path>
+                    </svg></button>
+            </div>
+        </div>
         <div class="triangle-down blue-triangle">
             <div></div>
         </div>
@@ -326,6 +417,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -125,7 +125,7 @@ a:focus {
 
 :root {
   --steel-blue: rgb(50, 106, 144);
-  --grey: rgb(204, 204, 204);
+  --transparent-grey: rgba(204, 204, 204, 0.5);
   --icy: rgb(182, 210, 224);
   --frosted: rgb(172, 205, 221);
   --pearl: rgb(245, 241, 241);
@@ -181,28 +181,28 @@ h1 {
   font-size: 1.6rem;
   font-weight: 600;
   letter-spacing: 0.4px;
-  line-height: 120%;
+  line-height: 110%;
 }
 
 h2 {
   font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: 0.32px;
-  line-height: 130%;
+  line-height: 110%;
 }
 
 h3 {
   font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: 0.26px;
-  line-height: 120%;
+  line-height: 100%;
 }
 
 h4 {
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.14px;
-  line-height: 120%;
+  line-height: 100%;
 }
 
 body {
@@ -210,10 +210,11 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+  background-color: var(--pearl);
 }
 
 .wrapper {
-  max-width: 1224px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem
 }
@@ -325,3 +326,4 @@ body {
 .confirmation__btn, .contact__submit, .about__btn {
   align-self: flex-start;
 }
+
