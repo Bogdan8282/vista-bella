@@ -154,6 +154,7 @@
 
 .pricing__list {
   display: flex;
+  align-items: center;
 }
 
 .pricing__item {
@@ -174,7 +175,6 @@
 }
 
 .pricing__item:nth-child(1) {
-  margin-top: 1.5rem;
   border-right: none;
 }
 
@@ -183,7 +183,6 @@
 }
 
 .pricing__item:nth-child(3) {
-  margin-top: 1.5rem;
   border-left: none;
 }
 

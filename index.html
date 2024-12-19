@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,11 +12,15 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="js/aos.js"></script>
+    <script defer src="js/adjustHeight.js"></script>
 </head>
 
 <body>
@@ -210,16 +214,15 @@
                             </ul>
                         </li>
                         <li class="pricing__item">
-                            <img src="./img/equipment.jpeg" alt="medical equipment" class="pricing__image">
+                            <img src="./img/workplace-2.jpeg" alt="medical equipment" class="pricing__image">
                             <span class="pricing__span-popular">Popular</span>
-                            <h3 class="pricing__caption">Consulta Básica de Oftalmología</h3>
+                            <h3 class="pricing__caption">Tratamiento Básico Especializado</h3>
                             <div class="pricing__price">
-                                <div class="pricing__price-value">$1,000</div>
-                                <span class="pricing__price-subcaption">por consulta</span>
+                                <div class="pricing__price-value">$5,000</div>
+                                <span class="pricing__price-subcaption">por tratamiento</span>
                             </div>
                             <button class="pricing__btn btn white-btn">Más información</button>
-                            <div class="pricing__description">Evaluación general de la salud visual y detección de
-                                problemas comunes.</div>
+                            <div class="pricing__description">Incluye todos los servicios de consulta básica y agrega tratamientos para problemas comunes.</div>
                             <ul class="pricing__inclusion-list">
                                 <li class="pricing__inclusion-item">
                                     <div class="pricing__inclusion-icon">
@@ -229,7 +232,7 @@
                                                 d="m5 13 4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="pricing__inclusion-text">Examen visual</p>
+                                    <p class="pricing__inclusion-text">Terapia láser</p>
                                 </li>
                                 <li class="pricing__inclusion-item">
                                     <div class="pricing__inclusion-icon">
@@ -239,7 +242,7 @@
                                                 d="m5 13 4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="pricing__inclusion-text">Detección cataratas</p>
+                                    <p class="pricing__inclusion-text">Corrección miopía</p>
                                 </li>
                                 <li class="pricing__inclusion-item">
                                     <div class="pricing__inclusion-icon">
@@ -249,20 +252,19 @@
                                                 d="m5 13 4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="pricing__inclusion-text">Consejos cuidado</p>
+                                    <p class="pricing__inclusion-text">Seguimiento mensual</p>
                                 </li>
                             </ul>
                         </li>
                         <li class="pricing__item">
-                            <img src="./img/equipment.jpeg" alt="medical equipment" class="pricing__image">
-                            <h3 class="pricing__caption">Consulta Básica de Oftalmología</h3>
+                            <img src="./img/equipment-2.jpeg" alt="medical equipment" class="pricing__image">
+                            <h3 class="pricing__caption">Cirugía Oftalmológica Avanzada</h3>
                             <div class="pricing__price">
-                                <div class="pricing__price-value">$1,000</div>
-                                <span class="pricing__price-subcaption">por consulta</span>
+                                <div class="pricing__price-value">$12,000</div>
+                                <span class="pricing__price-subcaption">por cirugía</span>
                             </div>
                             <button class="pricing__btn btn white-btn">Más información</button>
-                            <div class="pricing__description">Evaluación general de la salud visual y detección de
-                                problemas comunes.</div>
+                            <div class="pricing__description">Incluye todos los servicios de los niveles anteriores con opciones de cirugía especializadas.</div>
                             <ul class="pricing__inclusion-list">
                                 <li class="pricing__inclusion-item">
                                     <div class="pricing__inclusion-icon">
@@ -272,7 +274,7 @@
                                                 d="m5 13 4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="pricing__inclusion-text">Examen visual</p>
+                                    <p class="pricing__inclusion-text">Cirugía LASIK</p>
                                 </li>
                                 <li class="pricing__inclusion-item">
                                     <div class="pricing__inclusion-icon">
@@ -282,7 +284,7 @@
                                                 d="m5 13 4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="pricing__inclusion-text">Detección cataratas</p>
+                                    <p class="pricing__inclusion-text">Implantes lentes</p>
                                 </li>
                                 <li class="pricing__inclusion-item">
                                     <div class="pricing__inclusion-icon">
@@ -292,7 +294,7 @@
                                                 d="m5 13 4 4L19 7"></path>
                                         </svg>
                                     </div>
-                                    <p class="pricing__inclusion-text">Consejos cuidado</p>
+                                    <p class="pricing__inclusion-text">Corrección astigmatismo</p>
                                 </li>
                             </ul>
                         </li>
@@ -409,10 +411,9 @@
             <div class="footer__item">
                 <h3 class="footer__title">Políticas</h3>
                 <div class="footer__content">
-                    <a href="!#">Política de Privacidad</a>
-                    <a href="!#">Política de Cookies</a>
-                    <a href="!#">Términos de Servicio</a>
-                    <a href="!#">Política de Reembolso</a>
+                    <a class="link" href="./privacy-policy.html">Política de Privacidad</a>
+                    <a class="link" href="!#">Términos de Servicio</a>
+                    <a class="link" href="!#">Política de Reembolso</a>
                 </div>
             </div>
         </div>
