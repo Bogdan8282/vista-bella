@@ -109,6 +109,7 @@ ul {
 img {
   vertical-align: middle;
   object-fit: cover;
+  background-color: var(--transparent-grey);
 }
 
 button {
@@ -165,7 +166,6 @@ a {
   border: 2px solid #000;
   border-radius: 20px;
   transition: 0.2s background-color;
-  
 }
 
 .btn:focus,
@@ -217,7 +217,7 @@ body {
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2rem
+  padding: 0 2rem;
 }
 
 .white-text {
@@ -234,7 +234,8 @@ body {
   background-color: #fff;
 }
 
-.white-btn:focus, .white-btn:active {
+.white-btn:focus,
+.white-btn:active {
   border-color: #fff !important;
 }
 
@@ -311,24 +312,47 @@ body {
   gap: 8px;
 }
 
-#confirmation, #privacy, #terms, #reimbursement {
+#confirmation,
+#privacy,
+#terms,
+#reimbursement {
   display: flex;
   min-height: 100vh;
   align-items: center;
   background-color: var(--pearl);
 }
 
-.confirmation__wrap, .privacy__wrap, .terms__wrap, .reimbursement__wrap {
+.confirmation__wrap,
+.privacy__wrap,
+.terms__wrap,
+.reimbursement__wrap {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   margin: 7rem 0;
 }
 
-.privacy__list, .terms__list, .reimbursement__list {
+.confirmation__wrap > *,
+.privacy__wrap > *,
+.terms__wrap > *,
+.reimbursement__wrap > * {
+  margin-bottom: 20px;
+}
+
+.confirmation__wrap > *:last-child,
+.privacy__wrap > *:last-child,
+.terms__wrap > *:last-child,
+.reimbursement__wrap > *:last-child {
+  margin-bottom: 0;
+}
+
+.privacy__list,
+.terms__list,
+.reimbursement__list {
   list-style: outside;
 }
 
-.return__btn, .contact__submit, .about__btn {
+.return__btn,
+.contact__submit,
+.about__btn {
   align-self: flex-start;
 }

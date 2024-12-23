@@ -12,15 +12,18 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/slider.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script defer src="js/aos.js"></script>
     <script defer src="js/adjustHeight.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="js/slick.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script defer src="js/gsap.js"></script>
 </head>
 
 <body>
@@ -55,8 +58,8 @@
         </section>
         <section id="credit" class="steel-blue">
             <div class="wrapper">
-                <div class="credit__wrap">
-                    <ul class="credit__list">
+                <div class="credit__wrap fade-container">
+                    <ul class="credit__list fade">
                         <li class="credit__item">
                             <h2 class="credit__title">7+</h2>
                             <div class="credit__text">Clínicas en todo México</div>
@@ -79,10 +82,10 @@
         </section>
         <section id="assistance">
             <div class="wrapper">
-                <div class="assistance__wrap">
-                    <h2 class="assistance__title">Atención Visual Avanzada</h2>
+                <div class="assistance__wrap fade-container flip-container">
+                    <h2 class="assistance__title fade">Atención Visual Avanzada</h2>
                     <ul class="assistance__list">
-                        <li class="assistance__item">
+                        <li class="assistance__item flip">
                             <img src="./img/googles.jpeg" alt="googles" class="assistance__image">
                             <div class="assistance__content">
                                 <h3 class="assistance__name">Exámenes Oculares Integrales</h3>
@@ -91,7 +94,7 @@
                                     problemas tempranos.</p>
                             </div>
                         </li>
-                        <li class="assistance__item">
+                        <li class="assistance__item flip">
                             <img src="./img/office.jpeg" alt="oficina" class="assistance__image">
                             <div class="assistance__content">
                                 <h3 class="assistance__name">Cirugía de Cataratas Avanzada</h3>
@@ -99,7 +102,7 @@
                                     resultados rápidos y efectivos.</p>
                             </div>
                         </li>
-                        <li class="assistance__item">
+                        <li class="assistance__item flip">
                             <img src="./img/two-microscopes.jpeg" alt="dos microscopios" class="assistance__image">
                             <div class="assistance__content">
                                 <h3 class="assistance__name">Tratamiento de Glaucoma Personalizado</h3>
@@ -113,18 +116,18 @@
         </section>
         <section id="about">
             <div class="wrapper">
-                <div class="about__wrap">
+                <div class="about__wrap fade-container">
                     <img src="./img/kid-patient.jpg" alt="paciente" class="about__image">
                     <div class="about__content">
-                        <h2 class="about__title">Cuidando tu visión con excelencia</h2>
-                        <p class="about__text">En Vista Bella, nos dedicamos a ofrecer servicios de oftalmología de
+                        <h2 class="about__title fade">Cuidando tu visión con excelencia</h2>
+                        <p class="about__text fade">En Vista Bella, nos dedicamos a ofrecer servicios de oftalmología de
                             primera calidad en México. Nuestra clínica combina
                             tecnología de punta con un equipo de expertos comprometidos a cuidar de tu salud visual. Nos
                             enorgullece brindar una
                             atención personalizada que se adapta a las necesidades únicas de cada paciente, asegurando
                             así una experiencia cómoda y
                             efectiva.</p>
-                        <a href="#contact" class="about__btn btn">Contáctanos</a>
+                        <a href="#contact" class="about__btn btn fade">Contáctanos</a>
                     </div>
                 </div>
             </div>
@@ -167,20 +170,20 @@
         </section>
         <section id="pricing" class="white-text steel-blue">
             <div class="wrapper">
-                <div class="pricing__wrap">
-                    <h2 class="pricing__title">Servicios de Clínica Oftalmológica</h2>
-                    <ul class="pricing__list">
+                <div class="pricing__wrap fade-container">
+                    <h2 class="pricing__title fade">Servicios de Clínica Oftalmológica</h2>
+                    <ul class="pricing__list fade-container flip-container">
                         <li class="pricing__item">
-                            <img src="./img/equipment.jpeg" alt="medical equipment" class="pricing__image">
-                            <h3 class="pricing__caption">Consulta Básica de Oftalmología</h3>
-                            <div class="pricing__price">
+                            <img src="./img/equipment.jpeg" alt="medical equipment" class="pricing__image flip">
+                            <h3 class="pricing__caption fade">Consulta Básica de Oftalmología</h3>
+                            <div class="pricing__price fade">
                                 <div class="pricing__price-value">$1,000</div>
                                 <span class="pricing__price-subcaption">por consulta</span>
                             </div>
-                            <button class="pricing__btn btn white-btn">Más información</button>
-                            <div class="pricing__description">Evaluación general de la salud visual y detección de
+                            <button class="pricing__btn btn white-btn fade">Más información</button>
+                            <div class="pricing__description fade">Evaluación general de la salud visual y detección de
                                 problemas comunes.</div>
-                            <ul class="pricing__inclusion-list">
+                            <ul class="pricing__inclusion-list fade">
                                 <li class="pricing__inclusion-item">
                                     <div class="pricing__inclusion-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
@@ -214,16 +217,16 @@
                             </ul>
                         </li>
                         <li class="pricing__item">
-                            <img src="./img/workplace-2.jpeg" alt="medical equipment" class="pricing__image">
-                            <span class="pricing__span-popular">Popular</span>
-                            <h3 class="pricing__caption">Tratamiento Básico Especializado</h3>
-                            <div class="pricing__price">
+                            <img src="./img/workplace-2.jpeg" alt="medical equipment" class="pricing__image flip">
+                            <span class="pricing__span-popular flip">Popular</span>
+                            <h3 class="pricing__caption fade">Tratamiento Básico Especializado</h3>
+                            <div class="pricing__price fade">
                                 <div class="pricing__price-value">$5,000</div>
                                 <span class="pricing__price-subcaption">por tratamiento</span>
                             </div>
-                            <button class="pricing__btn btn white-btn">Más información</button>
-                            <div class="pricing__description">Incluye todos los servicios de consulta básica y agrega tratamientos para problemas comunes.</div>
-                            <ul class="pricing__inclusion-list">
+                            <button class="pricing__btn btn white-btn fade">Más información</button>
+                            <div class="pricing__description fade">Incluye todos los servicios de consulta básica y agrega tratamientos para problemas comunes.</div>
+                            <ul class="pricing__inclusion-list fade">
                                 <li class="pricing__inclusion-item">
                                     <div class="pricing__inclusion-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
@@ -257,15 +260,15 @@
                             </ul>
                         </li>
                         <li class="pricing__item">
-                            <img src="./img/equipment-2.jpeg" alt="medical equipment" class="pricing__image">
-                            <h3 class="pricing__caption">Cirugía Oftalmológica Avanzada</h3>
-                            <div class="pricing__price">
+                            <img src="./img/equipment-2.jpeg" alt="medical equipment" class="pricing__image flip">
+                            <h3 class="pricing__caption fade">Cirugía Oftalmológica Avanzada</h3>
+                            <div class="pricing__price fade">
                                 <div class="pricing__price-value">$12,000</div>
                                 <span class="pricing__price-subcaption">por cirugía</span>
                             </div>
-                            <button class="pricing__btn btn white-btn">Más información</button>
-                            <div class="pricing__description">Incluye todos los servicios de los niveles anteriores con opciones de cirugía especializadas.</div>
-                            <ul class="pricing__inclusion-list">
+                            <button class="pricing__btn btn white-btn fade">Más información</button>
+                            <div class="pricing__description fade">Incluye todos los servicios de los niveles anteriores con opciones de cirugía especializadas.</div>
+                            <ul class="pricing__inclusion-list fade">
                                 <li class="pricing__inclusion-item">
                                     <div class="pricing__inclusion-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
@@ -354,8 +357,8 @@
         </div>
         <section id="contact">
             <div class="wrapper">
-                <div class="contact__wrap">
-                    <div class="contact__content">
+                <div class="contact__wrap fade-container">
+                    <div class="contact__content fade">
                         <h3 class="contact__title">Contáctanos para tu salud visual</h3>
                         <div class="contact__text">En Vista Bella, estamos aquí para ayudarte con tus necesidades
                             oftalmológicas en México. Si tiene alguna pregunta o
@@ -412,15 +415,12 @@
                 <h3 class="footer__title">Políticas</h3>
                 <div class="footer__content">
                     <a class="link" href="./privacy-policy.html">Política de Privacidad</a>
-                    <a class="link" href="!#">Términos de Servicio</a>
-                    <a class="link" href="!#">Política de Reembolso</a>
+                    <a class="link" href="./service-terms.html">Términos de Servicio</a>
+                    <a class="link" href="./reimbursement-policy.html">Política de Reembolso</a>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>

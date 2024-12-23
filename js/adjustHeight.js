@@ -24,7 +24,7 @@ function adjustHeights() {
 }
 
 // Викликаємо функцію при завантаженні сторінки
-document.addEventListener("DOMContentLoaded", adjustHeights);
+window.addEventListener("load", adjustHeights);
 
 // Додаємо обробник для зміни розміру вікна
 window.addEventListener("resize", adjustHeights);
