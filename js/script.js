@@ -24,8 +24,11 @@ $(document).ready(function () {
     centerPadding: "16%",
     responsive: [
       {
-        breakpoint: 768,
-        settings: {},
+        breakpoint: 700,
+        settings: {
+          arrows: false,
+          centerMode: false,
+        },
       },
       {
         breakpoint: 480,

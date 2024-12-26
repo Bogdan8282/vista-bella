@@ -356,3 +356,9 @@ body {
 .about__btn {
   align-self: flex-start;
 }
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 14px;
+  }
+}

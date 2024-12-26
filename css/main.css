@@ -66,7 +66,7 @@
 }
 
 .assistance__title {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .assistance__name {
@@ -75,12 +75,12 @@
 
 .assistance__item {
   position: relative;
-  flex: 1;
 }
 
 .assistance__image {
-  max-width: 100%;
+  width: 100%;
   height: 550px;
+  border-radius: 8px;
 }
 
 .assistance__content {
@@ -95,6 +95,7 @@
   color: #fff;
   background: rgba(0, 0, 0, 0.8);
   padding: 1.5rem;
+  border-radius: 0 0 8px 8px;
 }
 
 .triangle-down {
@@ -125,7 +126,7 @@
 
 .about__wrap {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .about__image {
@@ -149,7 +150,7 @@
 
 .pricing__title {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .pricing__list {
@@ -178,18 +179,6 @@
   background-color: var(--pearl);
   border-radius: 20px;
   padding: 0.4rem 0.8rem;
-}
-
-.pricing__item:nth-child(1) {
-  border-right: none;
-}
-
-.pricing__item:nth-child(2) {
-  border: solid 2px #ccc;
-}
-
-.pricing__item:nth-child(3) {
-  border-left: none;
 }
 
 .pricing__btn {
@@ -229,7 +218,7 @@
 .contact__wrap {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .contact__content {
@@ -284,4 +273,74 @@
   font-family: inherit;
   font-weight: inherit;
   letter-spacing: inherit;
+}
+
+@media screen and (min-width: 901px) {
+  .pricing__item:nth-child(1) {
+    border-right: none;
+  }
+
+  .pricing__item:nth-child(2) {
+    border: solid 2px #ccc;
+  }
+
+  .pricing__item:nth-child(3) {
+    border-left: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .assistance__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .assistance__content {
+    padding: 3rem;
+  }
+
+  .assistance__name {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .assistance__text {
+    font-size: 1.2rem;
+  }
+
+  .assistance__image {
+    height: 500px;
+  }
+
+  .assistance__item {
+    width: 100%;
+  }
+
+  .about__image {
+    height: 500px;
+    flex: auto;
+  }
+
+  .pricing__list {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .pricing__item {
+    max-width: 580px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about__wrap {
+    flex-direction: column;
+  }
+
+  .contact__wrap {
+    flex-direction: column;
+  }
+
+  .contact__form {
+    width: 100%;
+  }
 }
