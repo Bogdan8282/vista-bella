@@ -26,13 +26,8 @@ $(document).ready(function () {
       {
         breakpoint: 700,
         settings: {
-          arrows: false,
-          centerMode: false,
+          centerMode: false
         },
-      },
-      {
-        breakpoint: 480,
-        settings: {},
       },
     ],
   });
@@ -45,7 +40,7 @@ $(document).ready(function () {
   });
 
   $("#slider__list-feedback").slick({
-    arrows: false,
+    arrows: true,
     dots: true,
     adaptiveHeight: false,
     variableWidth: false,

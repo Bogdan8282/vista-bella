@@ -41,10 +41,8 @@
 }
 
 .credit__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 
@@ -342,5 +340,13 @@
 
   .contact__form {
     width: 100%;
+  }
+
+  .credit__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .credit__item {
+    text-align: center;
   }
 }
