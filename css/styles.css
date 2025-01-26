@@ -127,8 +127,7 @@ a:focus {
 :root {
   --steel-blue: rgb(50, 106, 144);
   --transparent-grey: rgba(204, 204, 204, 0.5);
-  --icy: rgb(182, 210, 224);
-  --frosted: rgb(172, 205, 221);
+  --icy: rgb(178, 225, 240);
   --pearl: rgb(245, 241, 241);
   --black: rgb(42, 41, 42);
   --transparent-white: rgba(255, 255, 255, 0.8);
@@ -251,8 +250,13 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: var(--icy);
   z-index: 999;
+  transition: all 0.2s;
+}
+
+#header.scrolled {
+  background-color: var(--icy);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header__wrap {
