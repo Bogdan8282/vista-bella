@@ -1,0 +1,38 @@
+#confirmation,
+#privacy,
+#terms,
+#reimbursement {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  background-color: var(--pearl);
+}
+
+.confirmation__wrap,
+.privacy__wrap,
+.terms__wrap,
+.reimbursement__wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 7rem 0;
+}
+
+.confirmation__wrap > *,
+.privacy__wrap > *,
+.terms__wrap > *,
+.reimbursement__wrap > * {
+  margin-bottom: 20px;
+}
+
+.confirmation__wrap > *:last-child,
+.privacy__wrap > *:last-child,
+.terms__wrap > *:last-child,
+.reimbursement__wrap > *:last-child {
+  margin-bottom: 0;
+}
+
+.privacy__list,
+.terms__list,
+.reimbursement__list {
+  list-style: outside;
+}

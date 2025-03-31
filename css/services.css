@@ -1,0 +1,44 @@
+.service {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  background-color: var(--pearl);
+}
+
+.service__wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin: 7rem 0;
+}
+
+.service__wrap > * {
+  flex: 1;
+}
+
+.service__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.specifics__caption, .included__caption {
+    margin-bottom: 10px;
+}
+
+.service__image-pic {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.included__item {
+    display: flex;
+    gap: 5px;
+}
+
+.service__buttons {
+    display: flex;
+    gap: 1rem;
+}
